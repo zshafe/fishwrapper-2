@@ -24,12 +24,12 @@ This application uses [Next.js](https://nextjs.org/) as a framework for React. T
 I highly recommend using [VSCode](https://code.visualstudio.com/) as your IDE, as this will probably make your use of our linter and code formatter a lot easier. You should install the [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) as well as the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 ## Additional Dependency Documentation
-[TypeScript](https://www.typescriptlang.org/)
-[date-fns](https://date-fns.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [date-fns](https://date-fns.org/)
 ### Dependencies Specific to Processing Markdown (Will eventually be removed)
-[Gray Matter](https://github.com/jonschlinkert/gray-matter)
-[Remark](https://github.com/remarkjs/remark)
-[Remark HTML](https://github.com/remarkjs/remark-html)
+- [Gray Matter](https://github.com/jonschlinkert/gray-matter)
+- [Remark](https://github.com/remarkjs/remark)
+- [Remark HTML](https://github.com/remarkjs/remark-html)
 
 # Commands
 Upon first cloning and opening the repository run `yarn set version latest` to make sure you're on the correct version.

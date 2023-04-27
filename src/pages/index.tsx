@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Date from "../components/date";
 import utilStyles from "../styles/utils.module.css";
-import styles from "fishwrapper/styles/Home.module.css";
 import Layout, { siteTitle } from "../components/layout";
 import { GetStaticProps } from "next";
 import { getSortedArticlesData } from "fishwrapper/lib/mdArticleUtils";
@@ -34,7 +33,7 @@ export default function Home({
         <p>It’s all irrelevant</p>
       </section>
       <div
-        className={`${styles.grid} ${utilStyles.headingMd} ${utilStyles.padding1px}`}
+        className={`${utilStyles.grid} ${utilStyles.headingMd} ${utilStyles.padding1px}`}
       >
         {allArticlesData.map(({ id, date, title }) => (
           <div className={utilStyles.listItem} key={id}>

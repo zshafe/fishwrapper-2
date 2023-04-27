@@ -23,7 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
     - name: install dependencies
-      run: yarn install --frozen-lockfile
+      run: yarn install --immutable
     - name: style
       run: yarn lint && yarn pretty-check
     - name: build

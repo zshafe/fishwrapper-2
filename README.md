@@ -1,38 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# *whaddup motherfuckers*
 
-## Getting Started
+# **The Fishwrapper 2.0 is (almost) here and still the only funny shit on the internet**
+The codebase for the best newspaper? Creative collective? Heaping pile of bullshit? You decide
 
-First, run the development server:
+# How to Add An Article
+Make a copy of `~/articles/template/article-template.md`, and fill out your information. Pay attention to what you name the file, as that will be the URL path that takes you to that article. Then move that file to the `~/articles` directory. Make a PR and once approved, merge to main. If you don't want to figure all that out though, just send it to any of the developers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# Developer Stuff
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Node
+You'll need to have (Node)[https://nodejs.org/en/download] installed to run this project. I highly recommend installing the at least v16.x
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Yarn
+I highly recommend installing [yarn](https://yarnpkg.com/) as I find it to be much faster and overall easier to use than npm. You can install yarn classic globally with npm by using `npm install --global yarn`, and then you should be able to use the project. It should be noted that this project uses modern version of yarn [(yarn berry)](https://yarnpkg.com/), but there shouldn't be additional setup required. **Please lmk if you find this to not be the case as I haven't tested it**.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## React
+The app is based in React. The modern React Documentation can be found [here](https://react.dev/). Always check the dates on other resources you find online, as there have been a lot of iterations of best practices over the years. The (tic-tac-toe tutorial)[https://react.dev/learn] is a great place to start if you need a refresher on React or are new to the technology.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Next.js
+This application uses (Next.js)[https://nextjs.org/] as a framework for React. The structure and techniques of this application are very heavily based on things from the (tutorial)[https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website] for Next.js. **I would highly recommend moving through this tutorial, as it gives a good understanding of how the structure of a Next.js application works**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## VS Code
+I highly recommend using (VSCode)[https://code.visualstudio.com/] as your IDE, as this will probably make your use of our linter and code formatter a lot easier. You should install the (Prettier extension)[https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode] as well as the (ESLint extension)[https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint].
 
-## Learn More
+## Additional Dependency Documentation
+(TypeScript)[https://www.typescriptlang.org/]
+(date-fns)[https://date-fns.org/]
+### Dependencies Specific to Processing Markdown (Will eventually be removed)
+(Gray Matter)[https://github.com/jonschlinkert/gray-matter]
+(Remark)[https://github.com/remarkjs/remark]
+(Remark HTML)[https://github.com/remarkjs/remark-html]
 
-To learn more about Next.js, take a look at the following resources:
+# Commands
+Upon first cloning and opening the repository run `yarn set version latest` to make sure you're on the correct version.
+- `yarn` or `yarn install` to install all project dependencies **Do this before anything else!**
+- `yarn add [package]` to add a dependency. If dependency if a dev dependency (only used in development) make sure to flag `--dev`
+- `yarn remove [package]` to remove a dependency.
+- `yarn dev` to start up a development version of the application
+- `yarn build` to create a production build
+- `yarn start` to start that production build
+- `yarn lint` to run ESLint
+- `yarn pretty-check` to find code formatting issues
+- `yarn pretty-fix` to automatically fix any code formatting issues *you can also save your project to automatically fix formatting issues in any given file*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# File Structure
+## articles
+Storage for the markdown article files (will be gone eventually)
+## src
+Source code
+### components
+Individual components that are designed for reuse
+### lib
+Utility functions
+### pages
+Holds actual `_app.tsx` and `index.tsx` files.
+#### api
+Holds Next.js's serverless API endpoint routes
+#### articles
+Holds template for article components
+### styles
+Holds all `.module.css` files

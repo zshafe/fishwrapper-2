@@ -1,3 +1,4 @@
+*The Fishwrapper 2.0 is a new satire paper/creative project that is awaiting a new name. This is that organization's website's codebase*
 # How to Add An Article
 Make a copy of `~/article-template.md`, and fill out your information. Pay attention to what you name the file, as that will be the URL path that takes you to that article. Then move that file to the `~/articles` directory. Make a PR and once approved, merge to main. If you don't want to figure all that out though, just send it to any of the developers.
 

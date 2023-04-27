@@ -1,8 +1,3 @@
-# *whaddup motherfuckers*
-
-# **The Fishwrapper 2.0 is (almost) here and still the only funny shit on the internet**
-The codebase for the best newspaper? Creative collective? Heaping pile of bullshit? You decide
-
 # How to Add An Article
 Make a copy of `~/article-template.md`, and fill out your information. Pay attention to what you name the file, as that will be the URL path that takes you to that article. Then move that file to the `~/articles` directory. Make a PR and once approved, merge to main. If you don't want to figure all that out though, just send it to any of the developers.
 

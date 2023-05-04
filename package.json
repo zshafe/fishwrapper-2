@@ -11,6 +11,9 @@
     "pretty-fix": "prettier --write \"./**/*.{ts,tsx}\""
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.12.2",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "next": "13.3.1",

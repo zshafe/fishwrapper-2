@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Date from "../components/date";
+import Date from "../components/Date";
 import utilStyles from "../styles/utils.module.css";
 import Layout, { siteTitle } from "../components/layout";
 import { GetStaticProps } from "next";
@@ -29,9 +29,6 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingLg}>
-        <p>It’s all irrelevant</p>
-      </section>
       <div
         className={`${utilStyles.grid} ${utilStyles.headingMd} ${utilStyles.padding1px}`}
       >

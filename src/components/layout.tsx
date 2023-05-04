@@ -2,8 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { Container } from "@mui/material";
-import HomeHeader from "./HomeHeader";
-import PageHeader from "./PageHeader";
+import HomeHeader from "fishwrapper/components/HomeHeader";
+import PageHeader from "fishwrapper/components/PageHeader";
 
 export const siteTitle = "The Fishwrapper 2.0";
 

@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "fishwrapper/styles/utils.module.css";
 import { Link, Stack, Typography } from "@mui/material";
-import { siteTitle } from "./layout";
+import { siteTitle } from "fishwrapper/components/layout";
 
 export default function PageHeader() {
   return (

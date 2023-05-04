@@ -1,8 +1,8 @@
-import Layout from "../../components/layout";
-import { getAllArticleIds, getArticleData } from "../../lib/mdArticleUtils";
+import Layout from "fishwrapper/components/layout";
+import { getAllArticleIds, getArticleData } from "fishwrapper/lib/mdArticleUtils";
 import Head from "next/head";
-import Date from "../../components/Date";
-import utilStyles from "../../styles/utils.module.css";
+import Date from "fishwrapper/components/Date";
+import utilStyles from "fishwrapper/styles/utils.module.css";
 import { GetStaticProps, GetStaticPaths } from "next";
 
 export default function Article({

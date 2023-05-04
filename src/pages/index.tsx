@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Date from "../components/Date";
-import utilStyles from "../styles/utils.module.css";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "fishwrapper/components/layout";
 import { GetStaticProps } from "next";
 import { getSortedArticlesData } from "fishwrapper/lib/mdArticleUtils";
-import Link from "next/link";
+import Grid2 from "@mui/material/Unstable_Grid2";
+import ContentGridItem from "fishwrapper/components/ContentGridItem";
+import { Paper } from "@mui/material";
 
 export const getStaticProps: GetStaticProps = async () => {
   const allArticlesData = getSortedArticlesData();
@@ -29,19 +29,13 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div
-        className={`${utilStyles.grid} ${utilStyles.headingMd} ${utilStyles.padding1px}`}
-      >
-        {allArticlesData.map(({ id, date, title }) => (
-          <div className={utilStyles.listItem} key={id}>
-            <Link href={`/articles/${id}`}>{title}</Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </div>
-        ))}
-      </div>
+      <Paper elevation={3} sx={{ padding: 2, backgroundColor: "#f9f7f1" }}>
+        <Grid2 container spacing={2}>
+          {allArticlesData.map(({ id, date, title }) => (
+            <ContentGridItem key={id} id={id} date={date} title={title} />
+          ))}
+        </Grid2>
+      </Paper>
     </Layout>
   );
 }

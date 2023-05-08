@@ -1,4 +1,4 @@
-import Date from "fishwrapper/components/Date";
+import Date from "fishwrapper/components/date";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Link from "next/link";
 import { Card, CardActionArea, Stack, Typography } from "@mui/material";

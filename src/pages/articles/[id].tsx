@@ -4,7 +4,7 @@ import {
   getArticleData,
 } from "fishwrapper/lib/mdArticleUtils";
 import Head from "next/head";
-import Date from "fishwrapper/components/Date";
+import Date from "fishwrapper/components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { Container, Paper, Typography } from "@mui/material";
 

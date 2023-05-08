@@ -22,6 +22,7 @@ I highly recommend using [VSCode](https://code.visualstudio.com/) as your IDE, a
 ## Additional Dependency Documentation
 - [TypeScript](https://www.typescriptlang.org/)
 - [date-fns](https://date-fns.org/)
+- [Material-UI](https://mui.com/material-ui/getting-started/overview/)
 ### Dependencies Specific to Processing Markdown (Will eventually be removed)
 - [Gray Matter](https://github.com/jonschlinkert/gray-matter)
 - [Remark](https://github.com/remarkjs/remark)

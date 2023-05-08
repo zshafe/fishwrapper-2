@@ -3,8 +3,9 @@ import Image from "next/image";
 import utilStyles from "fishwrapper/styles/utils.module.css";
 import { Paper, Stack, Typography } from "@mui/material";
 import { siteTitle } from "fishwrapper/components/layout";
+import NavBar from "fishwrapper/components/NavBar";
 
-export default function HomeHeader() {
+export default function Header() {
   return (
     <Paper elevation={3} sx={{ backgroundColor: "#f9f7f1" }}>
       <Stack
@@ -24,6 +25,7 @@ export default function HomeHeader() {
         <Typography variant="h4">{siteTitle}</Typography>
         {/* TODO: Factor out 'It's all irrelevant' and make it a component that will randomly choose text to display */}
         <Typography variant="h5">It’s all irrelevant</Typography>
+        <NavBar />
       </Stack>
     </Paper>
   );

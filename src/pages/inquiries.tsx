@@ -9,7 +9,7 @@ export default function Inquiries() {
         <title>Inquiries</title>
       </Head>
       <Paper elevation={3} sx={{ padding: 2, backgroundColor: "#f9f7f1" }}>
-          <Typography variant="h1">TODO: FINISH INQUIRIES PAGE</Typography>
+        <Typography variant="h1">TODO: FINISH INQUIRIES PAGE</Typography>
       </Paper>
     </Layout>
   );

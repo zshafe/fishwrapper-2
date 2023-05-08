@@ -9,7 +9,7 @@ export default function Staff() {
         <title>Staff</title>
       </Head>
       <Paper elevation={3} sx={{ padding: 2, backgroundColor: "#f9f7f1" }}>
-          <Typography variant="h1">TODO: FINISH STAFF PAGE</Typography>
+        <Typography variant="h1">TODO: FINISH STAFF PAGE</Typography>
       </Paper>
     </Layout>
   );

@@ -4,11 +4,7 @@ import { Container } from "@mui/material";
 import Header from "fishwrapper/components/Header";
 export const siteTitle = "The Fishwrapper 2.0";
 
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Container maxWidth="lg" sx={{ mt: 3 }}>
       <Head>

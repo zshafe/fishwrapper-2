@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import utilStyles from "fishwrapper/styles/utils.module.css";
 import { Paper, Stack, Typography } from "@mui/material";
-import { siteTitle } from "fishwrapper/components/layout";
 import NavBar from "fishwrapper/components/NavBar";
+import { paperTitle } from "fishwrapper/strings";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -14,15 +15,19 @@ export default function Header() {
         spacing={2}
         sx={{ my: 2, py: 2 }}
       >
-        <Image
-          priority
-          src="/images/fishwrapper.jpg"
-          className={utilStyles.borderCircle}
-          height={144}
-          width={144}
-          alt={siteTitle}
-        />
-        <Typography variant="h4">{siteTitle}</Typography>
+        <Link href="/">
+          <Image
+            priority
+            src="/images/fishwrapper.jpg"
+            className={utilStyles.borderCircle}
+            height={144}
+            width={144}
+            alt={paperTitle}
+          />
+        </Link>
+        <Typography variant="h4" fontWeight="bold">
+          {paperTitle}
+        </Typography>
         {/* TODO: Factor out 'It's all irrelevant' and make it a component that will randomly choose text to display */}
         <Typography variant="h5">It’s all irrelevant</Typography>
         <NavBar />

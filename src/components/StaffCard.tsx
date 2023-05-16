@@ -2,7 +2,7 @@ import { Instagram, Twitter } from "@mui/icons-material";
 import { Box, Stack, Typography } from "@mui/material";
 import { StaffInfo } from "fishwrapper/staffInfo";
 import Link from "next/link";
-import StaffProfile from "./StaffProfile";
+import StaffProfile from "fishwrapper/components/StaffProfile";
 
 export default function StaffCard({
   name,

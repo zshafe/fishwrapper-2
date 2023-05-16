@@ -13,6 +13,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </Head>
       <Header />
       <main>{children}</main>
+      {/* TODO: Add a footer with copyright info, maybe some other stuff idk? I also envision a
+      form to sign up for our mailing list (ig if we want one of those) */}
     </Container>
   );
 }
